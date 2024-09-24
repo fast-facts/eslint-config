@@ -22,6 +22,13 @@ const javascript = {
     eqeqeq: ['error', 'always', {
       null: 'ignore',
     }],
+    'no-unused-expressions': 'off',
+    'no-unused-vars': ['error', {
+      argsIgnorePattern: '^_',
+      caughtErrorsIgnorePattern: '^_',
+      destructuredArrayIgnorePattern: '^_',
+      varsIgnorePattern: '^_',
+    }],
     'prefer-arrow-callback': 'error',
 
     '@stylistic/arrow-parens': ['error', 'as-needed'],

@@ -30,6 +30,7 @@ const javascript = {
       arrays: 'always-multiline',
       objects: 'always-multiline',
     }],
+    '@stylistic/max-statements-per-line': ['off'],
     '@stylistic/quote-props': ['error', 'as-needed'],
 
     'sort-imports': ['error', {

@@ -1,7 +1,7 @@
 # eslint-config
 
 ```bash
-npm install eslint-config-final
+npm install -D eslint-config-final
 ```
 
 ## Quickstart

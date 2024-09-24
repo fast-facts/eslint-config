@@ -44,7 +44,10 @@ const javascript = {
       },
     }],
     '@stylistic/quote-props': ['error', 'as-needed'],
-    '@stylistic/yield-star-spacing': ['off'],
+    '@stylistic/yield-star-spacing': ['error', {
+      before: false,
+      after: true,
+    }],
 
     'sort-imports': ['error', {
       ignoreCase: true,

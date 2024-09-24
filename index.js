@@ -69,6 +69,7 @@ const typescript = {
 
   rules: {
     ...javascript.rules,
+    'no-unused-vars': 'off',
 
     '@typescript-eslint/no-deprecated': 'error',
     '@typescript-eslint/no-explicit-any': 'off',

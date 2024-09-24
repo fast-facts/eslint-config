@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 const eslint = require('@eslint/js');
 const tseslint = require('typescript-eslint');
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const stylistic = require('@stylistic/eslint-plugin');
 const noImplicitAnyFunctionArgs = require('eslint-plugin-no-implicit-any-function-args');
 const angularPlugin = require('angular-eslint');
@@ -49,7 +48,6 @@ const typescript = {
 
   plugins: {
     'no-implicit-any-function-args': noImplicitAnyFunctionArgs,
-    '@typescript-eslint': tsPlugin,
   },
 
   rules: {

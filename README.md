@@ -36,13 +36,14 @@ module.exports = tseslint.config(
 
     extends: [
       ...config.typescript,
+      ...config.angularTypescript,
     ],
   },
   {
     files: ['**/*.html'],
 
     extends: [
-      ...config.angular,
+      ...config.angularTemplate,
     ],
   },
 );

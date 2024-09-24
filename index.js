@@ -96,7 +96,7 @@ const angularTypescript = {
   },
 };
 
-const angularHtml = {
+const angularTemplate = {
   extends: [
     ...angularPlugin.configs.templateRecommended,
   ],
@@ -105,5 +105,6 @@ const angularHtml = {
 module.exports = {
   javascript: tseslint.config(javascript),
   typescript: tseslint.config(typescript),
-  angular: tseslint.config(angularTypescript, angularHtml),
+  angularTypescript: tseslint.config(angularTypescript),
+  angularTemplate: tseslint.config(angularTemplate),
 };

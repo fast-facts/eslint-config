@@ -12,6 +12,7 @@ const tseslint = require('typescript-eslint');
 const config = require('eslint-config-final');
 
 module.exports = tseslint.config(
+  // Javascript
   {
     files: ['**/*.js'],
 
@@ -19,13 +20,31 @@ module.exports = tseslint.config(
       ...config.javascript,
     ],
   },
+  
+  // Typescript
   {
     files: ['**/*.ts'],
 
     extends: [
       ...config.typescript,
     ],
-  }
+  },
+
+  // Angular
+  {
+    files: ['**/*.ts'],
+
+    extends: [
+      ...config.typescript,
+    ],
+  },
+  {
+    files: ['**/*.html'],
+
+    extends: [
+      ...config.angular,
+    ],
+  },
 );
 
 ```

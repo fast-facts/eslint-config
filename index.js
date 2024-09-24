@@ -4,11 +4,11 @@ const tseslint = require('typescript-eslint');
 const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const stylistic = require('@stylistic/eslint-plugin');
 const noImplicitAnyFunctionArgs = require('eslint-plugin-no-implicit-any-function-args');
+const angularPlugin = require('angular-eslint');
+const rxjs = require('eslint-plugin-rxjs-updated');
+const rxjsAngular = require('eslint-plugin-rxjs-angular-updated');
 
-/** @type {import('typescript-eslint').ConfigWithExtends} */
 const javascript = {
-  files: ['**/*.js'],
-
   extends: [
     eslint.configs.recommended,
     stylistic.configs.customize({
@@ -40,10 +40,7 @@ const javascript = {
   },
 };
 
-/** @type {import('typescript-eslint').ConfigWithExtends} */
 const typescript = {
-  files: ['**/*.ts'],
-
   extends: [
     ...javascript.extends,
     ...tseslint.configs.recommended,
@@ -78,7 +75,35 @@ const typescript = {
   },
 };
 
+const angularTypescript = {
+  extends: [
+    ...angularPlugin.configs.tsRecommended,
+    rxjs.configs.recommended,
+  ],
+
+  plugins: {
+    rxjs,
+    'rxjs-angular': rxjsAngular,
+  },
+
+  rules: {
+    'rxjs/no-nested-subscribe': 'off',
+    'rxjs/no-unsafe-catch': 'error',
+    'rxjs/no-unsafe-switchmap': 'error',
+    'rxjs/no-unsafe-takeuntil': 'error',
+
+    'rxjs-angular/prefer-takeuntil': 'error',
+  },
+};
+
+const angularHtml = {
+  extends: [
+    ...angularPlugin.configs.templateRecommended,
+  ],
+};
+
 module.exports = {
   javascript: tseslint.config(javascript),
   typescript: tseslint.config(typescript),
+  angular: tseslint.config(angularTypescript, angularHtml),
 };

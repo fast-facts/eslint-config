@@ -30,6 +30,12 @@ const javascript = {
       objects: 'always-multiline',
     }],
     '@stylistic/max-statements-per-line': ['off'],
+    '@stylistic/operator-linebreak': ['error', 'after', {
+      overrides: {
+        '?': 'before',
+        ':': 'before',
+      },
+    }],
     '@stylistic/quote-props': ['error', 'as-needed'],
     '@stylistic/yield-star-spacing': ['off'],
 

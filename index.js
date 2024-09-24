@@ -31,6 +31,7 @@ const javascript = {
     }],
     '@stylistic/max-statements-per-line': ['off'],
     '@stylistic/quote-props': ['error', 'as-needed'],
+    '@stylistic/yield-star-spacing': ['off'],
 
     'sort-imports': ['error', {
       ignoreCase: true,

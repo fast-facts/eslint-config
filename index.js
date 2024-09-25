@@ -36,6 +36,7 @@ const javascript = {
       arrays: 'always-multiline',
       objects: 'always-multiline',
     }],
+    '@stylistic/indent': ['off'],
     '@stylistic/max-statements-per-line': ['off'],
     '@stylistic/operator-linebreak': ['error', 'after', {
       overrides: {

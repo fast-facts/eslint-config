@@ -83,12 +83,9 @@ const typescript = {
       varsIgnorePattern: '^_',
     }],
 
-    'no-implicit-any-function-args/no-implicit-any-function-args': [
-      'error',
-      {
-        ignorePattern: '^_',
-      },
-    ],
+    'no-implicit-any-function-args/no-implicit-any-function-args': ['error', {
+      ignorePattern: '^_',
+    }],
   },
 };
 

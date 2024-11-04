@@ -13,18 +13,18 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@eslint/js": "^9.13.0",
-    "@stylistic/eslint-plugin": "^2.9.0",
-    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@eslint/js": "^9.14.0",
+    "@stylistic/eslint-plugin": "^2.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
     "angular-eslint": "^18.4.0",
-    "eslint-plugin-no-implicit-any-function-args": "^1.4.6",
-    "eslint-plugin-rxjs-angular-updated": "^1.0.12",
-    "eslint-plugin-rxjs-updated": "^1.0.12",
-    "typescript-eslint": "^8.11.0"
+    "eslint-plugin-no-implicit-any-function-args": "^1.4.8",
+    "eslint-plugin-rxjs-angular-updated": "^1.0.15",
+    "eslint-plugin-rxjs-updated": "^1.0.15",
+    "typescript-eslint": "^8.12.2"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
-    "eslint": "^9.13.0"
+    "eslint": "^9.14.0"
   },
   "peerDependencies": {
     "eslint": ">= 9"

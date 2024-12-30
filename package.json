@@ -15,12 +15,12 @@
   "dependencies": {
     "@eslint/js": "^9.17.0",
     "@stylistic/eslint-plugin": "^2.12.1",
-    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
     "angular-eslint": "^19.0.2",
-    "eslint-plugin-no-implicit-any-function-args": "^1.4.17",
-    "eslint-plugin-rxjs-angular-updated": "^1.0.23",
-    "eslint-plugin-rxjs-updated": "^1.0.23",
-    "typescript-eslint": "^8.18.1"
+    "eslint-plugin-no-implicit-any-function-args": "^1.4.18",
+    "eslint-plugin-rxjs-angular-updated": "^1.0.24",
+    "eslint-plugin-rxjs-updated": "^1.0.24",
+    "typescript-eslint": "^8.18.2"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",

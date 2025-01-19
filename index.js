@@ -6,6 +6,7 @@ const noImplicitAnyFunctionArgs = require('eslint-plugin-no-implicit-any-functio
 const angularPlugin = require('angular-eslint');
 const rxjs = require('eslint-plugin-rxjs-updated');
 const rxjsAngular = require('eslint-plugin-rxjs-angular-updated');
+const tailwindcss = require('eslint-plugin-tailwindcss');
 
 const javascript = {
   extends: [
@@ -116,9 +117,16 @@ const angularTemplate = {
   ],
 };
 
+const tailwind = {
+  extends: [
+    ...tailwindcss.configs['flat/recommended'],
+  ],
+};
+
 module.exports = {
   javascript: tseslint.config(javascript),
   typescript: tseslint.config(typescript),
   angularTypescript: tseslint.config(angularTypescript),
   angularTemplate: tseslint.config(angularTemplate),
+  tailwind: tseslint.config(tailwind),
 };

@@ -14,14 +14,14 @@
   "description": "",
   "dependencies": {
     "@eslint/js": "^9.19.0",
-    "@stylistic/eslint-plugin": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@stylistic/eslint-plugin": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
     "angular-eslint": "^19.0.2",
-    "eslint-plugin-no-implicit-any-function-args": "^1.4.22",
-    "eslint-plugin-rxjs-angular-updated": "^1.0.28",
-    "eslint-plugin-rxjs-updated": "^1.0.28",
+    "eslint-plugin-no-implicit-any-function-args": "^1.4.23",
+    "eslint-plugin-rxjs-angular-updated": "^1.0.29",
+    "eslint-plugin-rxjs-updated": "^1.0.29",
     "eslint-plugin-tailwindcss": "^3.18.0",
-    "typescript-eslint": "^8.21.0"
+    "typescript-eslint": "^8.22.0"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",

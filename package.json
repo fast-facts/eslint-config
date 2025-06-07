@@ -18,8 +18,8 @@
     "@typescript-eslint/eslint-plugin": "^8.33.0",
     "angular-eslint": "^19.6.0",
     "eslint-plugin-no-implicit-any-function-args": "^1.4.39",
-    "eslint-plugin-rxjs-angular-updated": "^1.0.46",
-    "eslint-plugin-rxjs-updated": "^1.0.46",
+    "eslint-plugin-rxjs-angular-x": "^0.0.3",
+    "eslint-plugin-rxjs-x": "^0.7.5",
     "eslint-plugin-tailwindcss": "^3.18.0",
     "typescript-eslint": "^8.33.0"
   },

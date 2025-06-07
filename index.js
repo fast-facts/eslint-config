@@ -4,8 +4,8 @@ const tseslint = require('typescript-eslint');
 const stylistic = require('@stylistic/eslint-plugin');
 const noImplicitAnyFunctionArgs = require('eslint-plugin-no-implicit-any-function-args');
 const angularPlugin = require('angular-eslint');
-const rxjs = require('eslint-plugin-rxjs-updated');
-const rxjsAngular = require('eslint-plugin-rxjs-angular-updated');
+const rxjs = require('eslint-plugin-rxjs-x');
+const rxjsAngular = require('eslint-plugin-rxjs-angular-x');
 const tailwindcss = require('eslint-plugin-tailwindcss');
 
 const javascript = {

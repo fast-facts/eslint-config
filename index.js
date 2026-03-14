@@ -93,7 +93,7 @@ const typescript = {
 const angularTypescript = {
   extends: [
     ...angularPlugin.configs.tsRecommended,
-    rxjs.configs.recommended,
+    rxjs.default.configs.recommended,
   ],
 
   plugins: {

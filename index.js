@@ -102,10 +102,10 @@ const angularTypescript = {
   },
 
   rules: {
-    'rxjs/no-nested-subscribe': 'off',
-    'rxjs/no-unsafe-catch': 'error',
-    'rxjs/no-unsafe-switchmap': 'error',
-    'rxjs/no-unsafe-takeuntil': 'error',
+    'rxjs-x/no-nested-subscribe': 'off',
+    'rxjs-x/no-unsafe-catch': 'error',
+    'rxjs-x/no-unsafe-switchmap': 'error',
+    'rxjs-x/no-unsafe-takeuntil': 'error',
 
     'rxjs-angular/prefer-takeuntil': 'error',
   },

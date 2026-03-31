@@ -1,0 +1,32 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base"
+    ],
+    "minimumReleaseAge": "14 days",
+    "schedule": [
+        "before 4am"
+    ],
+    "timezone": "America/New_York",
+    "prCreation": "not-pending",
+    "labels": [
+        "dependencies"
+    ],
+    "rangeStrategy": "bump",
+    "automerge": true,
+    "automergeType": "pr",
+    "packageRules": [
+        {
+            "matchPackageNames": [
+                "@stylistic/eslint-plugin"
+            ],
+            "allowedVersions": "<4.0.0"
+        },
+        {
+            "groupName": "eslint",
+            "matchPackagePatterns": [
+                "*eslint*"
+            ]
+        }
+    ]
+}

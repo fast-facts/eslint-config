@@ -98,7 +98,7 @@ const angularTypescript = {
 
   plugins: {
     rxjs,
-    'rxjs-angular': rxjsAngular,
+    'rxjs-angular-x': rxjsAngular,
   },
 
   rules: {
@@ -107,7 +107,7 @@ const angularTypescript = {
     'rxjs-x/no-unsafe-switchmap': 'error',
     'rxjs-x/no-unsafe-takeuntil': 'error',
 
-    'rxjs-angular/prefer-takeuntil': 'error',
+    'rxjs-angular-x/prefer-takeuntil': 'error',
   },
 };
 

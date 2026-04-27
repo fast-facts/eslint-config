@@ -8,7 +8,7 @@
         "before 4am"
     ],
     "timezone": "America/New_York",
-    "prCreation": "not-pending",
+    "prCreation": "immediate",
     "labels": [
         "dependencies"
     ],
@@ -16,6 +16,19 @@
     "automerge": true,
     "automergeType": "pr",
     "packageRules": [
+        {
+            "matchManagers": [
+                "github-actions"
+            ],
+            "matchPackageNames": [
+                "node"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "enabled": false
+        },
         {
             "matchPackageNames": [
                 "@stylistic/eslint-plugin"

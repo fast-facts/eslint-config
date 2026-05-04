@@ -20,8 +20,11 @@
             "matchManagers": [
                 "github-actions"
             ],
+            "matchDepTypes": [
+                "uses-with"
+            ],
             "matchPackageNames": [
-                "node"
+                "node-version"
             ],
             "matchUpdateTypes": [
                 "minor",

@@ -98,7 +98,7 @@ const angularTypescript = {
 
   plugins: {
     rxjs,
-    'rxjs-angular-x': rxjsAngular,
+    'rxjs-angular-x': rxjsAngular.default,
   },
 
   rules: {

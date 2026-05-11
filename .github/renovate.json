@@ -23,8 +23,8 @@
             "matchDepTypes": [
                 "uses-with"
             ],
-            "matchPackageNames": [
-                "node-version"
+            "matchDepNames": [
+                "node"
             ],
             "matchUpdateTypes": [
                 "minor",

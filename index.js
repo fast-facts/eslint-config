@@ -9,6 +9,8 @@ const rxjsAngular = require('eslint-plugin-rxjs-angular-x');
 const tailwindcss = require('eslint-plugin-tailwindcss');
 
 const javascript = {
+  files: ['**/*.{js,mjs,cjs}'],
+
   extends: [
     eslint.configs.recommended,
     stylistic.configs.customize({
@@ -59,6 +61,8 @@ const javascript = {
 };
 
 const typescript = {
+  files: ['**/*.{ts,tsx,mts,cts}'],
+
   extends: [
     ...javascript.extends,
     ...tseslint.configs.recommended,
@@ -77,6 +81,8 @@ const typescript = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-unused-expressions': 'off',
+    '@typescript-eslint/prefer-optional-chain': 'error',
+    '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/no-unused-vars': ['error', {
       argsIgnorePattern: '^_',
       caughtErrorsIgnorePattern: '^_',
@@ -91,6 +97,8 @@ const typescript = {
 };
 
 const angularTypescript = {
+  files: ['**/*.ts'],
+
   extends: [
     ...angularPlugin.configs.tsRecommended,
     rxjs.default.configs.recommended,
@@ -102,6 +110,12 @@ const angularTypescript = {
   },
 
   rules: {
+    '@angular-eslint/component-selector': ['error', { type: 'element', prefix: 'app', style: 'kebab-case' }],
+    '@angular-eslint/directive-selector': ['error', { type: 'attribute', prefix: 'app', style: 'camelCase' }],
+    '@angular-eslint/no-empty-lifecycle-method': 'error',
+    '@angular-eslint/no-lifecycle-call': 'error',
+    '@angular-eslint/prefer-output-readonly': 'error',
+
     'rxjs-x/no-nested-subscribe': 'off',
     'rxjs-x/no-unsafe-catch': 'error',
     'rxjs-x/no-unsafe-switchmap': 'error',
@@ -112,12 +126,16 @@ const angularTypescript = {
 };
 
 const angularTemplate = {
+  files: ['**/*.html'],
+
   extends: [
     ...angularPlugin.configs.templateRecommended,
   ],
 };
 
 const tailwind = {
+  files: ['**/*.{ts,html}'],
+
   extends: [
     ...tailwindcss.configs['flat/recommended'],
   ],

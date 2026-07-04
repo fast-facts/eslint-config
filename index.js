@@ -137,7 +137,7 @@ const tailwind = {
   files: ['**/*.{ts,html}'],
 
   extends: [
-    ...tailwindcss.configs['flat/recommended'],
+    tailwindcss.configs.recommended,
   ],
 };
 

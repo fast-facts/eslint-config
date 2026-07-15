@@ -21,10 +21,10 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@typescript-eslint/eslint-plugin": "^8.62.1",
     "angular-eslint": "^22.0.0",
-    "eslint-plugin-no-implicit-any-function-args": "^1.4.92",
+    "eslint-plugin-no-implicit-any-function-args": "^1.4.93",
     "eslint-plugin-rxjs-angular-x": "^1.0.1",
     "eslint-plugin-rxjs-x": "^1.0.2",
-    "eslint-plugin-tailwindcss": "^4.0.4",
+    "eslint-plugin-tailwindcss": "^4.0.5",
     "typescript-eslint": "^8.62.1"
   },
   "devDependencies": {

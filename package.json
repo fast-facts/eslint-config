@@ -23,7 +23,7 @@
     "angular-eslint": "^22.1.0",
     "eslint-plugin-no-implicit-any-function-args": "^1.4.95",
     "eslint-plugin-rxjs-angular-x": "^1.0.1",
-    "eslint-plugin-rxjs-x": "^1.0.2",
+    "eslint-plugin-rxjs-x": "^1.0.3",
     "eslint-plugin-tailwindcss": "^4.2.0",
     "typescript-eslint": "^8.65.0"
   },

@@ -24,7 +24,7 @@
     "eslint-plugin-no-implicit-any-function-args": "^1.4.98",
     "eslint-plugin-rxjs-angular-x": "^1.0.1",
     "eslint-plugin-rxjs-x": "^1.0.4",
-    "eslint-plugin-tailwindcss": "^4.2.0",
+    "eslint-plugin-tailwindcss": "^4.3.0",
     "typescript-eslint": "^8.67.0"
   },
   "devDependencies": {

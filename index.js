@@ -35,10 +35,7 @@ const javascript = {
     'prefer-arrow-callback': 'error',
 
     '@stylistic/arrow-parens': ['error', 'as-needed'],
-    '@stylistic/comma-dangle': ['error', {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-    }],
+    '@stylistic/comma-dangle': ['error', 'always-multiline'],
     '@stylistic/indent': ['off'],
     '@stylistic/max-statements-per-line': ['off'],
     '@stylistic/operator-linebreak': ['error', 'after', {

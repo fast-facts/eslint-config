@@ -141,6 +141,11 @@ const html = {
 
   rules: {
     ...htmlPlugin.configs.recommended.rules,
+    'html/attrs-newline': ['error', {
+      ifAttrsMoreThan: 20,
+      maxLen: 120,
+      closeStyle: 'sameline',
+    }],
     'html/indent': ['error', 2],
     'html/no-duplicate-class': 'error',
     'html/id-naming-convention': ['error', 'kebab-case'],

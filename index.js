@@ -7,6 +7,7 @@ const angularPlugin = require('angular-eslint');
 const rxjs = require('eslint-plugin-rxjs-x');
 const rxjsAngular = require('eslint-plugin-rxjs-angular-x');
 const tailwindcss = require('eslint-plugin-tailwindcss');
+const htmlPlugin = require('@html-eslint/eslint-plugin');
 
 const javascript = {
   files: ['**/*.{js,mjs,cjs}'],
@@ -130,6 +131,20 @@ const angularTemplate = {
   ],
 };
 
+const html = {
+  files: ['**/*.html'],
+
+  ...htmlPlugin.configs.recommended,
+
+  language: 'html/html',
+
+  rules: {
+    ...htmlPlugin.configs.recommended.rules,
+    'html/no-duplicate-class': 'error',
+    'html/id-naming-convention': ['error', 'kebab-case'],
+  },
+};
+
 const tailwind = {
   files: ['**/*.{ts,html}'],
 
@@ -143,5 +158,6 @@ module.exports = {
   typescript: tseslint.config(typescript),
   angularTypescript: tseslint.config(angularTypescript),
   angularTemplate: tseslint.config(angularTemplate),
+  html: tseslint.config(html),
   tailwind: tseslint.config(tailwind),
 };

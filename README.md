@@ -46,6 +46,15 @@ module.exports = tseslint.config(
       ...config.angularTemplate,
     ],
   },
+
+  // HTML. Do not combine with angularTemplate.
+  {
+    files: ['**/*.html'],
+
+    extends: [
+      ...config.html,
+    ],
+  },
 );
 
 ```

@@ -17,6 +17,7 @@
     "url": "https://github.com/fast-facts/eslint-config.git"
   },
   "dependencies": {
+    "@eslint/css": "^2.0.0",
     "@eslint/js": "^10.0.1",
     "@html-eslint/eslint-plugin": "^0.66.1",
     "@stylistic/eslint-plugin": "^5.10.0",

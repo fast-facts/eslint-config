@@ -16,5 +16,5 @@ module.exports = tseslint.config(
     extends: [
       ...config.javascript,
     ],
-  }
+  },
 );

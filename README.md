@@ -55,6 +55,15 @@ module.exports = tseslint.config(
       ...config.html,
     ],
   },
+
+  // CSS. Plain CSS only. Not SCSS.
+  {
+    files: ['**/*.css'],
+
+    extends: [
+      ...config.css,
+    ],
+  },
 );
 
 ```

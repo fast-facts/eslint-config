@@ -141,6 +141,7 @@ const html = {
 
   rules: {
     ...htmlPlugin.configs.recommended.rules,
+    'html/indent': ['error', 2],
     'html/no-duplicate-class': 'error',
     'html/id-naming-convention': ['error', 'kebab-case'],
   },

@@ -21,7 +21,7 @@
     "@eslint/js": "^10.0.1",
     "@html-eslint/eslint-plugin": "^0.66.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@typescript-eslint/eslint-plugin": "^8.70.0",
+    "@typescript-eslint/eslint-plugin": "^8.70.1",
     "angular-eslint": "^22.5.0",
     "eslint-plugin-no-implicit-any-function-args": "^1.4.102",
     "eslint-plugin-rxjs-angular-x": "^1.0.1",
